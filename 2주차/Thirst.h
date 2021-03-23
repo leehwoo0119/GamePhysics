@@ -4,10 +4,9 @@
 class Thirst : public MinorState
 {
 public:
-	virtual void IsGoldFull() {};
-	virtual void IsGoldGoal() {};
-	virtual void IsFatigueFull() {};
-	virtual void IsThirstFull();
+	virtual void Enter();
+	virtual void Excute();
+	virtual void Exit(const int) {};
 	virtual void ChangeState(MinorState* state){};
 };
 

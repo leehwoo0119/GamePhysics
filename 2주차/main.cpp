@@ -8,7 +8,7 @@ int main()
 	{
 		cout << "=============================================" << endl;
 		cout << "\n" << "ÇöÀç ÅÏ: " << i <<" / 20"<< endl;
-		minorstate->IsGoldFull();
+		minorstate->Enter();
 	}
 	delete minorstate;
 	return 0;

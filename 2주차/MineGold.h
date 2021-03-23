@@ -6,14 +6,12 @@
 class MineGold : public MinorState
 {
 public:
-	virtual void IsGoldFull();
-	virtual void IsGoldGoal() {};
-	virtual void IsFatigueFull() {};
-	virtual void IsThirstFull() {};
+	virtual void Enter();
+	virtual void Excute();
+	virtual void Exit(const int);
 	virtual void ChangeState(MinorState* state)
 	{
-		state->IsGoldGoal();
-		state->IsThirstFull();
+		state->Enter();
 		delete state;
 	};
 };
